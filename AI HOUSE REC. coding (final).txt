@@ -1,0 +1,187 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jul 15 21:00:03 2020
+
+@author: khausaalya 
+"""
+
+import csv
+import sys
+
+x     = ''
+
+print("Welcome to Yabawaki!")
+name = input("Hello I am Yabawaki, what is your name? ")
+print ()
+n = (input(' Press Enter to start, press 0 if you wish to quit instead: '))
+print ()
+if n == '0':
+   print ('okay bye')
+else:
+   print ('Let us start!')
+    
+start = input("Press 1 to buy a house with Yabawaki.")
+print("Here are all the details for the house!")
+print(x)
+
+
+with open('house data set ai.csv', newline='') as f:
+    reader = csv.reader(f)
+    for row in reader:
+        print(row)
+
+print(x)
+print("Now, let us recommend house for you!")
+
+house = ("", "Terrace, Service apartment","Apartment, Townhouse, Loft", 
+         "Bungalow,Semi-D","Studio, Pent house","")
+
+rating = int(input ("Please enter house rating (1-5 stars): "))
+
+for i in range(1,2):
+
+    print ("Rating for house: ", house[rating])
+    while rating < 0 or rating > 9:
+        rating = int(input("Please enter house rating (1-5 stars): ", rating))
+
+    for j in range(rating):
+        sys.stdout.write("*",)
+
+
+type1 = ['Terrace']
+price1 = ['RM 425000']
+area1 = ['Shah Alam']
+rooms1 = ['4']
+ownership1 = ['Leasehold'] 
+size1 = ['1100 sq.ft']  
+
+type2 = ['Service apartment']
+price2 = ['RM 480000']
+area2 = ['Johor']
+rooms2= ['2']
+ownership2 = ['Leasehold']
+size2 = ['861 sq.ft']
+
+if rating == 1:
+    print (x)
+    print (type1)
+    print (price1)
+    print (area1)
+    print (rooms1)
+    print (ownership1)
+    print (size1)
+    print()
+    print (type2)
+    print (price2)
+    print (area2)
+    print (rooms2)
+    print (ownership2)
+    print (size2)
+    
+type3 = ['Apartment']
+price3 = ['RM 390 000']
+area3 = ['Taiping']
+rooms3= ['3']
+ownership3 = ['Leasehold'] 
+size3 = ['861 sq.ft'] 
+
+type4 = ['Townhouse']
+price4 = ['RM 560000']
+area4 = ['Pahang']
+rooms4= ['2']
+ownership4 = ['Freehold'] 
+size4 = ['1200 sq.ft']  
+
+type5 = ['Loft']
+price5 = ['RM 1350 888']
+area5 = ['Kl Sentral']
+rooms5= ['3']
+ownership5 = ['Freeholhold']
+size5 = ['1,584 sq.ft']
+
+if rating == 2:
+    print (x)
+    print (type3)
+    print (price3)
+    print (area3)
+    print (rooms3)
+    print (ownership3)
+    print (size3)
+    print()
+    print (type4) 
+    print (price4) 
+    print (area4) 
+    print (rooms4) 
+    print (ownership4)
+    print (size4)
+    print()
+    print (type5) 
+    print (price5) 
+    print (area5) 
+    print (rooms5) 
+    print (ownership5)
+    print (size5)
+
+type6 =  ['Bungalow']
+price6 = ['RM 1550000']
+area6 = ['Setia Alam']
+rooms6 = ['6']
+ownership6 = ['Freehold'] 
+size6 = ['3759 sq.ft']  
+
+type7 = ['Semi-d']
+price7 = ['RM 786000']
+area7 = ['Rawang']
+rooms7= ['5']
+ownership7 = ['Leasehold'] 
+size7 = ['2240 sq.ft'] 
+
+if rating == 3:
+    print (x)
+    print (type6) 
+    print (price6) 
+    print (area6) 
+    print (rooms6) 
+    print (ownership6)
+    print (size6)
+    print()
+    print (type7) 
+    print (price7) 
+    print (area7) 
+    print (rooms7) 
+    print (ownership7)
+    print (size7)
+    
+type8 = ['Studio']
+price8 = ['RM 300,00']
+area8 = ['Gombak']
+rooms8 = ['2']
+ownership8 = ['Freehold'] 
+size8 = ['850 sq.ft']   
+
+type9 = ['Pent House']
+price9 = ['RM 4500000']
+area9 = ['Penang']
+rooms9= ['5']
+ownership9 = ['Freehold'] 
+size9 = ['5000 sq.ft']
+
+if rating == 4:
+    print (x)
+    print (type8) 
+    print (price8) 
+    print (area8) 
+    print (rooms8) 
+    print (ownership8)
+    print (size8)
+    print()
+    print (type9) 
+    print (price9) 
+    print (area9) 
+    print (rooms9) 
+    print (ownership9)
+    print (size9)
+
+if rating == 5:
+    print (x)
+    print ("Sorry, out of the list .")

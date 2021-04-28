@@ -1,0 +1,10 @@
+House ID,type,price,area,Number of rooms,Ownership,Size,Popularity
+1,Terrace,"RM425,000 ",Shah Alam,4,Leasehold,"1,100 sq. ft",1
+2,Apartment,"RM390,000 ",Taiping,3,Leasehold,861 sq. ft.,2
+3,Studio,"RM300,000 ",Gombak,2,Freehold,850 sq. ft,4
+4,Bungalow,"RM1,550,000 ",Setia Alam,6,Freehold,"3,759 sq. ft",3
+5,Townhouse,"RM560,000 ",Pahang,2,Freehold,"1,200 sq. ft",2
+6,Service Apartment,"RM480,000 ",Johor,2,Leasehold,861 sq. ft.,1
+7,Penthouse,"RM4,500,000 ",Penang,5,Freehold,"5,000 sq. ft",4
+8,Semi-D,"RM786,000 ",Rawang,5,Leasehold,2240 sq. ft,3
+9,Loft,"RM1,350,888 ",KL Sentral,3,Freehold,1584 sq.ft,2
